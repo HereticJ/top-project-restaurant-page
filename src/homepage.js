@@ -1,12 +1,9 @@
-export const contentDiv = document.getElementById("#content");
+export const contentDiv = document.querySelector("div#content");
 export const headline = document.createElement("h1");
-export const img = document.createElement("img");
 export const desc = document.createElement("p");
 
-img.src = "mff.jpg";
 headline.textContent = "Uncle Moe's Family Feedbag";
-desc.textContent = "At Uncle Moe's Family Feedbag, we'll get you fat, and loving it!"
+desc.textContent = "Come to Uncle Moe's for family fun, it's good good good good, good good good!"
 
-contentDiv.appendChild("headline");
-contentDiv.appendChild("img");
-contentDiv.appendChild("desc");
+contentDiv.appendChild(headline);
+contentDiv.appendChild(desc);

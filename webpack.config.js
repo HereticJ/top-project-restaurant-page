@@ -18,8 +18,8 @@ export default {
     module: {
         rules: [
             {
-                test: /\.html$/i,
-                use: ["html-loader"],
+                test: /\.(jpg|jpeg)$/i,
+                type: "asset/resource",
             },
         ],
     },
