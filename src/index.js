@@ -1,18 +1,19 @@
-import { contentDiv, headline, desc } from "./homepage.js"
+import { contentDiv, headline, desc } from "./homepage.js";
 import mff from "./mff.jpg";
 
+const content = document.querySelector("#content");
 const image = document.createElement("img");
 image.src = mff;
 
 document.body.appendChild(image);
 
 const menu = document.querySelector("#menu");
-const about = document.querySelector('#about');
 
-menu.addEventListener("click", checkMenu());
+
+menu.addEventListener("click", checkMenu);
     function checkMenu() {
-        contentDiv.removeChild(headline);
-        contentDiv.removeChild(desc);
+        content.removeChild(headline);
+        content.removeChild(desc);
         document.body.removeChild(image);
     };
 
