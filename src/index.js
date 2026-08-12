@@ -1,8 +1,9 @@
 import { headline, desc } from "./homepage.js";
 import { menuBtn } from "./menu.js";
+import "./styles.css";
 import mff from "./mff.jpg";
 
-const content = document.querySelector("#content");
+export const content = document.querySelector("#content");
 export const image = document.createElement("img");
 image.src = mff;
 

@@ -1,61 +1,80 @@
-import { headline, desc } from "./homepage.js";
-import { image } from "./index.js";
-export { menuBtn, menuHeadline, beverages, sides, meals, desserts };
+import { headline, desc, homeBtn } from "./homepage.js";
+import { content, image } from "./index.js";
+export { menuBtn, drinks, sides, meals, desserts, itemDesc };
 
-const menuHeadline = document.createElement("h1");
-const meals = document.createElement("h2");
-const beverages = document.createElement("h2");
-const sides = document.createElement("h2");
-const desserts = document.createElement("h2");
-const chickenFS = document.createElement("h4");
-const burger = document.createElement("h4");
-const clubSW = document.createElement("h4");
-const beer1 = document.createElement("h4");
-const beer2 = document.createElement("h4");
-const wine1 = document.createElement("h4");
-const wine2 = document.createElement("h4");
-const cola1 = document.createElement("h4");
-const cola2 = document.createElement("h4");
-let description = document.createElement("p");
+// Describes menu items.
+let itemDesc = document.createElement("p");
 
+// Meals title, list of h3 elements for each entry, adds p descriptions.
+const meals = document.createElement("div#meals");
+    const mealsTitle = document.createElement("h3");
+        mealsTitle.textContent = "Main Courses";
+            const chickenFS = document.createElement("h5");
+            const burger = document.createElement("h5");
+            const clubSW = document.createElement("h5");
+                chickenFS.textContent = "Chicken Fried Steak";
+                burger.textContent = "Patty 'n Selma";
+                clubSW.textContent = "Club Sandwich";
 
-menuHeadline.textContent = "Menu";
-meals.textContent = "Main Courses";
-beverages.textContent = "Drinks";
-sides.textContent = "Sides";
-desserts.textContent = "Treats";
+// Drinks title, list of h3 elements for each entry, adds p descriptions.
+const drinks = document.createElement("div#drinks");
+    const drinksTitle = document.createElement("h3");
+        drinksTitle.textContent = "Drinks";
+            const beer1 = document.createElement("h5");
+            const beer2 = document.createElement("h5");
+            const wine1 = document.createElement("h5");
+            const wine2 = document.createElement("h5");
+            const cola1 = document.createElement("h5");
+            const cola2 = document.createElement("h5");
+                beer1.textContent = "Duff";
+                beer2.textContent = "Duff Lite";
+                wine1.textContent = "White Zinfandel";
+                wine2.textContent = "Red Zinfandel";
+                cola1.textContent = "Buzz Cola";
+                cola2.textContent = "Diet Buzz Cola";
 
+// Siodes title, list of h3 elements for each entry, adds p descriptions.
+const sides = document.createElement("div#sides");
+    const sidesTitle = document.createElement("h3");
+        sidesTitle.textContent = "Sides";
+
+// Desserts title, list of h3 elements for each entry, adds p descriptions.
+const desserts = document.createElement("div#desserts");
+    const dessertsTitle = document.createElement("h3");
+        dessertsTitle.textContent = "Desserts";
+
+// Removes homepage elements from page and switches to menu tab.
 const menuBtn = document.querySelector("#menu");
 menuBtn.addEventListener("click", menuPage);
     function menuPage() {
         content.removeChild(headline);
         content.removeChild(desc);
         document.body.removeChild(image);
-        content.appendChild(menuHeadline);
-        menuHeadline.textContent = "Feedbag Favorites";
-            content.appendChild(meals);
-                meals.appendChild(chickenFS);
-                meals.appendChild(burger);
-                meals.appendChild(clubSW);
-                    chickenFS.textContent = "Chicken Fried Steak";
-                    burger.textContent = "Moe's Patty";
-                    clubSW.textContent = "Club Sandwich";
-            content.appendChild(beverages);
-                beverages.appendChild(beer1);
-                beverages.appendChild(beer2);
-                beverages.appendChild(wine1);
-                beverages.appendChild(wine2);
-                beverages.appendChild(cola1);
-                beverages.appendChild(cola1);
-                    beer1.textContent = "Duff";
-                    beer2.textContent = "Duff Lite";
-                    wine1.textContent = "White Zinfandel";
-                    wine2.textContent = "Red Zinfandel";
-                    cola1.textContent = "Buzz Cola";
-                    cola2.textContent = "Diet Buzz Cola";
-        
-        content.appendChild(sides);
-        content.appendChild(desserts);
+
+            // Adds menu title and lists meals.
+            meals.appendChild(mealsTitle);
+                content.appendChild(meals);
+                    meals.appendChild(chickenFS);
+                    meals.appendChild(burger);
+                    meals.appendChild(clubSW);
+
+            // Appends drinks to DOM.
+            drinks.appendChild(drinksTitle);
+                content.appendChild(drinks);
+                    drinks.appendChild(beer1);
+                    drinks.appendChild(beer2);
+                    drinks.appendChild(wine1);
+                    drinks.appendChild(wine2);
+                    drinks.appendChild(cola1);
+                    drinks.appendChild(cola1);
+
+            // Appends sides to DOM.
+            sides.appendChild(sidesTitle);
+                content.appendChild(sides);
+                
+            // Appends desserts to DOM.
+            desserts.appendChild(dessertsTitle);
+                content.appendChild(desserts);
     };
 
 
