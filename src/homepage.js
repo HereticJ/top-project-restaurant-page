@@ -11,12 +11,6 @@ function homepage() {
     }
     content.appendChild(headline);
     content.appendChild(desc);
-    content.appendChild(image);
 };
 
-headline.textContent = "Uncle Moe's Family Feedbag";
-desc.textContent = "Come to Uncle Moe's for family fun, it's good good good good, good good good!"
-
-content.appendChild(headline);
-content.appendChild(desc);
 
