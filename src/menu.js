@@ -1,6 +1,5 @@
-import { headline, desc, homeBtn } from "./homepage.js";
-import { content, image } from "./index.js";
-export { menuBtn, drinks, sides, meals, desserts, itemDesc };
+import { content } from "./homepage.js";
+export { menuFill };
 
 // Describes menu items.
 let itemDesc = document.createElement("p");
@@ -43,40 +42,35 @@ const desserts = document.createElement("div#desserts");
     const dessertsTitle = document.createElement("h3");
         dessertsTitle.textContent = "Desserts";
 
-// Removes homepage elements from page and switches to menu tab.
-const menuBtn = document.querySelector("#menu");
-menuBtn.addEventListener("click", menuPage);
-    function menuPage() {
-        content.removeChild(headline);
-        content.removeChild(desc);
-        document.body.removeChild(image);
+// Fills menu tab with menu content.
+function menuContents() {
+    // Adds menu title and lists meals.
+    meals.appendChild(mealsTitle);
+        meals.appendChild(chickenFS);
+        meals.appendChild(burger);
+        meals.appendChild(clubSW);
+            content.appendChild(meals);
 
-            // Adds menu title and lists meals.
-            meals.appendChild(mealsTitle);
-                content.appendChild(meals);
-                    meals.appendChild(chickenFS);
-                    meals.appendChild(burger);
-                    meals.appendChild(clubSW);
+    // Appends drinks to DOM.
+    drinks.appendChild(drinksTitle);
+        content.appendChild(drinks);
+            drinks.appendChild(beer1);
+            drinks.appendChild(beer2);
+            drinks.appendChild(wine1);
+            drinks.appendChild(wine2);
+            drinks.appendChild(cola1);
+            drinks.appendChild(cola1);
 
-            // Appends drinks to DOM.
-            drinks.appendChild(drinksTitle);
-                content.appendChild(drinks);
-                    drinks.appendChild(beer1);
-                    drinks.appendChild(beer2);
-                    drinks.appendChild(wine1);
-                    drinks.appendChild(wine2);
-                    drinks.appendChild(cola1);
-                    drinks.appendChild(cola1);
+    // Appends sides to DOM.
+    sides.appendChild(sidesTitle);
+        content.appendChild(sides);
+        
+    // Appends desserts to DOM.
+    desserts.appendChild(dessertsTitle);
+        content.appendChild(desserts);
+};
 
-            // Appends sides to DOM.
-            sides.appendChild(sidesTitle);
-                content.appendChild(sides);
-                
-            // Appends desserts to DOM.
-            desserts.appendChild(dessertsTitle);
-                content.appendChild(desserts);
-    };
-
+const menuFill = menuContents();
 
 
 

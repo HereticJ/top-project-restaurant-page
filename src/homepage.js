@@ -1,16 +1,16 @@
 export const headline = document.createElement("h1");
-export const homeBtn = document.querySelector("#home");
 export const desc = document.createElement("p");
-import { image } from "./index.js";
+export const content = document.querySelector("#content");
+import mff from "./mff2.jpg";
 
-homeBtn.addEventListener("click", homepage);
-function homepage() {
-    const rmContent = document.querySelector("#content");
-    while (rmContent.firstChild) {
-        rmContent.removeChild(rmContent.lastChild);
-    }
-    content.appendChild(headline);
-    content.appendChild(desc);
-};
+export const image = document.createElement("img");
+image.src = mff;
 
+// Supplies text content for headline and description.
+headline.textContent = "Uncle Moe's Family Feedbag";
+desc.textContent = "Come to Uncle Moe's for family fun, it's good good good good, good good good!";
 
+// Initializes homepage for first visit.
+content.appendChild(headline);
+content.appendChild(image);
+content.appendChild(desc);

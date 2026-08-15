@@ -1,21 +1,41 @@
-import { headline, desc } from "./homepage.js";
-import { menuBtn } from "./menu.js";
+import { headline, desc, content, image } from "./homepage.js";
+import { menuFill } from "./menu.js";
 import "./styles.css";
-import mff2 from "./mff2.jpg";
 
-export const content = document.querySelector("#content");
-export const image = document.createElement("img");
-image.src = mff2;
+// Initializes tab buttons.
+const homeBtn = document.querySelector("#home");
+const menuBtn = document.querySelector("#menu");
+const aboutBtn = document.querySelector("#about");
 
-content.appendChild(headline);
-content.appendChild(image);
-content.appendChild(desc);
+// Returns homepage when clicked.
+homeBtn.addEventListener("click", homePage);
+function homePage() {
+    removeTab();
+    content.appendChild(headline);
+    content.appendChild(image);
+    content.appendChild(desc);
+};
 
+// Removes homepage elements from page and switches to menu tab.
+function removeTab() {
+    const rmContent = document.querySelector("#content");
+        while (rmContent.firstChild) {
+            rmContent.removeChild(rmContent.lastChild);
+        };
+};
 
-headline.textContent = "Uncle Moe's Family Feedbag";
-desc.textContent = "Come to Uncle Moe's for family fun, it's good good good good, good good good!"
+// Switches to Menu tab when clicked.
+menuBtn.addEventListener("click", menuPage);
+    function menuPage() {
+        removeTab();
+        menuFill;
+    };
 
-const menu = document.querySelector("#menu");
-const about = document.querySelector("#about");
+// Switches to About tab when clicked.
+menuBtn.addEventListener("click", aboutPage);
+    function aboutPage() {
+        removeTab();
+
+    };
 
 console.log("Is this working yet?");
