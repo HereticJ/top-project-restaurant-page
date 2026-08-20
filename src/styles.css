@@ -86,5 +86,23 @@ img {
 
 #content * {
     display: grid;
-    place-self: center;
+    justify-self: center;
+}
+
+.titles {
+    font-style: bold;
+    text-decoration: underline;
+}
+
+.entries > #text {
+    justify-self: center;
+}
+
+.entries > img {
+    height: 150px;
+    width: 200px;
+}
+
+.desc {
+    font-style: italic;
 }

@@ -1,8 +1,8 @@
 import "./styles.css";
 import { headline, desc, content, image } from "./homepage.js";
 import { meals, mealsTitle, hotDog, deepFried, fish, drinks, drinksTitle,
-     beer1, beer2, wine1, wine2, cola1, cola2, sides, sidesTitle, chips,
-     fries, chili, wings, pizza, spaghetti, desserts, dessertsTitle } 
+     beer1, beer2, wine1, wine2, cola1, cola2, sides, sidesTitle, chipsTitle,
+     friesTitle, chiliTitle, wingsTitle, pizzaTitle, spaghettiTitle, desserts, dessertsTitle } 
      from "./menu.js";
 
 // Initializes tab buttons.
@@ -49,6 +49,16 @@ function homeContents() {
 
 // Fills menu tab with menu content.
 function menuContents() {
+    // Appends sides to DOM.
+    sides.appendChild(sidesTitle);
+        content.appendChild(sides);
+            sides.appendChild(chipsTitle);
+            sides.appendChild(friesTitle);
+            sides.appendChild(chiliTitle);
+            sides.appendChild(wingsTitle);
+            sides.appendChild(pizzaTitle);
+            sides.appendChild(spaghettiTitle);
+
     // Adds menu title and lists meals.
     meals.appendChild(mealsTitle);
         meals.appendChild(hotDog);
@@ -65,16 +75,6 @@ function menuContents() {
             drinks.appendChild(wine2);
             drinks.appendChild(cola1);
             drinks.appendChild(cola1);
-
-    // Appends sides to DOM.
-    sides.appendChild(sidesTitle);
-        content.appendChild(sides);
-            sides.appendChild(chips);
-            sides.appendChild(fries);
-            sides.appendChild(chili);
-            sides.appendChild(wings);
-            sides.appendChild(pizza);
-            sides.appendChild(spaghetti);
         
     // Appends desserts to DOM.
     desserts.appendChild(dessertsTitle);
