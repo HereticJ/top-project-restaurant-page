@@ -1,62 +1,97 @@
-// Describes menu items.
-
-const chipsDesc = document.createElement("p");
-const friesDesc = document.createElement("p");
-const chiliDesc = document.createElement("p");
-const wingsDesc = document.createElement("p");
-const pizzaDesc = document.createElement("p");
-
-chipsDesc.classList = "desc";
-friesDesc.classList = "desc";
-chiliDesc.classList = "desc";
-wingsDesc.classList = "desc";
-pizzaDesc.classList = "desc";
-
-const chipsPic = document.createElement("img");
-const friesPic = document.createElement("img");
-const chiliPic = document.createElement("img");
-const wingsPic = document.createElement("img");
-const pizzaPic = document.createElement("img");
+import chips from "./chips.png";
+import fries from "./fries.jpg";
+import chili from "./chili.jpg";
+import pizza from "./pizza.jpg";
+import wings from "./wings.jpg";
 
 // Sides title, list of h3 elements for each entry, adds p descriptions.
-export const sides = document.createElement("div#sides");
-    export const sidesTitle = document.createElement("h2");
-        sidesTitle.classList = "titles";
-        sidesTitle.textContent = "Sides";
-            export const chipsTitle = document.createElement("h3");
-            export const friesTitle = document.createElement("h3");
-            export const chiliTitle = document.createElement("h3");
-            export const wingsTitle = document.createElement("h3");
-            export const pizzaTitle = document.createElement("h3");
-            chipsTitle.classList = "entries";
-            friesTitle.classList = "entries";
-            chiliTitle.classList = "entries";
-            wingsTitle.classList = "entries";
+export const sides = document.createElement("div");
+sides.classList = "sides";
+    const sidesHeader = document.createElement("h2");
+        sidesHeader.classList = "header";
+        sidesHeader.textContent = "Sides";
+        
+    export const chipsDiv = document.createElement("div");
+    export const chipsPic = document.createElement("img");
+    chipsPic.src = chips;
+    chipsDiv.classList = "sides";
+        const chipsTitle = document.createElement("h3");
+        const chipsDesc = document.createElement("p");
+        chipsDiv.classList = "sides";
+        chipsDesc.classList = "desc";
+        chipsTitle.classList = "entries";
+            chipsTitle.textContent = "Fiestaritos";
+            chipsDesc.textContent = "Start your fiesta right with Moe's house-made tortilla chips and your choice of salsa."
+                chipsDiv.appendChild(chipsTitle);
+                chipsDiv.appendChild(chipsPic);
+                chipsDiv.appendChild(chipsDesc);
+        
+    export const friesDiv = document.createElement("div");
+    export const friesPic = document.createElement("img");
+    friesPic.src = fries;
+    friesDiv.classList = "sides";
+        const friesTitle = document.createElement("h3");
+        const friesDesc = document.createElement("p");
+        friesTitle.classList = "entries";
+        friesDesc.classList = "desc";
+            friesTitle.textContent = "Million Dollar Birthday Fries";
+            friesDesc.textContent = "Please remember to remove the basket from Moe's head (it gets really hot)."
+                friesDiv.appendChild(friesTitle);
+                friesDiv.appendChild(friesPic);
+                friesDiv.appendChild(friesDesc);        
+                
+    export const chiliDiv = document.createElement("div");
+    export const chiliPic = document.createElement("img");
+    chiliPic.src = chili;
+    chiliDiv.classList = "sides";
+        const chiliTitle = document.createElement("h3");
+        const chiliDesc = document.createElement("p");
+        chiliTitle.classList = "entries";
+        chiliDesc.classList = "desc";
+            chiliTitle.textContent = "Moe's Chicken Chili";
+            chiliDesc.textContent = "Now with less offensive language!";
+                chiliDiv.appendChild(chiliTitle);
+                chiliDiv.appendChild(chiliPic);
+                chiliDiv.appendChild(chiliDesc);
+    
+    export const wingsDiv = document.createElement("div");
+    export const wingsPic = document.createElement("img");
+    wingsPic.src = wings;
+    wingsDiv.classList = "sides";
+        const wingsTitle = document.createElement("h3");
+        const wingsDesc = document.createElement("p");
+        wingsTitle.classList = "entries";
+        wingsDesc.classList = "desc";
+            wingsTitle.textContent = "Ranchy Wingy Thingys";
+            wingsDesc.textContent = "Made with up to 30% real buffalo!"
+                wingsDiv.appendChild(wingsTitle);
+                wingsDiv.appendChild(wingsPic);
+                wingsDiv.appendChild(wingsDesc);
+                            
+    export const pizzaDiv = document.createElement("div");
+    export const pizzaPic = document.createElement("img");
+    pizzaPic.src = pizza;
+    pizzaDiv.classList = "sides";
+        const pizzaTitle = document.createElement("h3");
+        const pizzaDesc = document.createElement("p");
             pizzaTitle.classList = "entries";
-            
-                chipsTitle.textContent = "Fiestaritos";
-                chipsTitle.appendChild(chipsPic);
-                chipsTitle.appendChild(chipsDesc);
-                    chipsDesc.textContent = "Start your fiesta right with Moe's house-made tortilla chips and your choice of salsa."
-                friesTitle.textContent = "Million Dollar Birthday Fries";
-                friesTitle.appendChild(friesPic);
-                friesTitle.appendChild(friesDesc);
-                    friesDesc.textContent = "Please remember to remove the basket from Moe's head (it gets really hot)."
-                chiliTitle.textContent = "Moe's Chicken Chili";
-                chiliTitle.appendChild(chiliPic);
-                chiliTitle.appendChild(chiliDesc);
-                    chiliDesc.textContent = "Now free of offensive language!"
-                wingsTitle.textContent = "Ranchy Wingy Thingys";
-                wingsTitle.appendChild(wingsPic);
-                wingsTitle.appendChild(wingsDesc);
-                    wingsDesc.textContent = "You know, those things. The wings buffalo have."
+            pizzaDesc.classList = "desc";
                 pizzaTitle.textContent = "Southwestern Pizza Fingers";
-                pizzaTitle.appendChild(pizzaPic);
-                pizzaTitle.appendChild(pizzaDesc);
-                    pizzaDesc.textContent = "Who needs triangles when you can have fingers?"
+                pizzaDesc.textContent = "Who needs triangles when you can have rectangles? *Note: actual shapes may vary."
+                    pizzaDiv.appendChild(pizzaTitle);
+                    pizzaDiv.appendChild(pizzaPic);
+                    pizzaDiv.appendChild(pizzaDesc);
+
+sides.appendChild(chipsDiv);
+sides.appendChild(friesDiv);
+sides.appendChild(chiliDiv);
+sides.appendChild(wingsDiv);
+sides.appendChild(pizzaDiv);
+        
 
 // Meals title, list of h3 elements for each entry, adds p descriptions.
-export const meals = document.createElement("div#meals");
+export const meals = document.createElement("div");
+meals.classList = "meals";
     export const mealsTitle = document.createElement("h2");
     mealsTitle.classList = "titles";
         mealsTitle.textContent = "Main Courses";
@@ -77,7 +112,8 @@ export const meals = document.createElement("div#meals");
                     spaghettiDesc.textContent = "Authentic Italian-style, home-style, noodles in tomato sauce with Moe's world famous mostly meat balls."
 
 // Drinks title, list of h3 elements for each entry, adds p descriptions.
-export const drinks = document.createElement("div#drinks");
+export const drinks = document.createElement("div");
+drinks.classList = "drinks";
     export const drinksTitle = document.createElement("h2");
     drinksTitle.classList = "titles";
         drinksTitle.textContent = "Drinks";

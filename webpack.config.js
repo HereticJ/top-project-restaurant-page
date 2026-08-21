@@ -17,9 +17,10 @@ export default {
   ],
     module: {
         rules: [
+// webpack.config.js
             {
-                test: /\.(jpg|jpeg)$/i,
-                type: "asset/resource",
+            test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            type: "asset/resource",
             },
             {
                 test: /\.css$/i,

@@ -89,18 +89,24 @@ img {
     justify-self: center;
 }
 
-.titles {
+.meals {
+    display: grid;
+
+}
+
+.headers {
     font-style: bold;
     text-decoration: underline;
+    margin: 0;
+}
+
+div > img {
+    width: 300px;
+    height: 200px;
 }
 
 .entries > #text {
     justify-self: center;
-}
-
-.entries > img {
-    height: 150px;
-    width: 200px;
 }
 
 .desc {
