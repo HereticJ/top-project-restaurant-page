@@ -1,7 +1,7 @@
 import "./styles.css";
 import { headline, desc, content, image } from "./homepage.js";
 import { meals, mealsTitle, hotDog, deepFried, fish, drinks, drinksTitle,
-     beer1, beer2, wine1, wine2, cola1, cola2, sides, chipsPic, friesPic, 
+     beer1, beer2, beer3, wine1, wine2, cola1, cola2, sides, chipsPic, friesPic, 
      chiliPic, wingsPic, pizzaPic, desserts, dessertsTitle } 
      from "./menu.js";
 
@@ -64,6 +64,7 @@ function menuContents() {
         content.appendChild(drinks);
             drinks.appendChild(beer1);
             drinks.appendChild(beer2);
+            drinks.appendChild(beer3);
             drinks.appendChild(wine1);
             drinks.appendChild(wine2);
             drinks.appendChild(cola1);

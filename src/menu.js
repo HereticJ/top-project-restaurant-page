@@ -3,6 +3,12 @@ import fries from "./fries.jpg";
 import chili from "./chili.jpg";
 import pizza from "./pizza.jpg";
 import wings from "./wings.jpg";
+import hotdog from "./hotdog.jpg";
+import deepfried from "./deepfried.jpg";
+import steakfish from "./steakfish.jpg";
+import duff from "./duff.jpg";
+import düff from "./düff.jpg";
+import dufflite from "./dufflite.jpg";
 
 // Sides title, list of h3 elements for each entry, adds p descriptions.
 export const sides = document.createElement("div");
@@ -63,7 +69,7 @@ sides.classList = "sides";
         wingsTitle.classList = "entries";
         wingsDesc.classList = "desc";
             wingsTitle.textContent = "Ranchy Wingy Thingys";
-            wingsDesc.textContent = "Made with up to 30% real buffalo!"
+            wingsDesc.textContent = "Made with up to 30% genuine* buffalo meat!"
                 wingsDiv.appendChild(wingsTitle);
                 wingsDiv.appendChild(wingsPic);
                 wingsDiv.appendChild(wingsDesc);
@@ -77,7 +83,7 @@ sides.classList = "sides";
             pizzaTitle.classList = "entries";
             pizzaDesc.classList = "desc";
                 pizzaTitle.textContent = "Southwestern Pizza Fingers";
-                pizzaDesc.textContent = "Who needs triangles when you can have rectangles? *Note: actual shapes may vary."
+                pizzaDesc.textContent = "Who needs triangles when you can have rectangles? *Note: actual geometry may vary."
                     pizzaDiv.appendChild(pizzaTitle);
                     pizzaDiv.appendChild(pizzaPic);
                     pizzaDiv.appendChild(pizzaDesc);
@@ -89,27 +95,57 @@ sides.appendChild(wingsDiv);
 sides.appendChild(pizzaDiv);
         
 
+
 // Meals title, list of h3 elements for each entry, adds p descriptions.
 export const meals = document.createElement("div");
 meals.classList = "meals";
-    export const mealsTitle = document.createElement("h2");
-    mealsTitle.classList = "titles";
-        mealsTitle.textContent = "Main Courses";
-            export const hotDog = document.createElement("h3");
-            export const deepFried = document.createElement("h3");
-            export const fish = document.createElement("h3");
-            export const spaghettiTitle = document.createElement("h3");
-            const spaghettiDesc = document.createElement("p");
-            spaghettiDesc.classList = "desc";
-            hotDog.classList = "entries";
-            deepFried.classList = "entries";
-            fish.classList = "entries";
-            spaghettiTitle.classList = "entries";
-                hotDog.textContent = "Amtrak-style Hot Dog";
-                deepFried.textContent = "Deep-fried home-style meals";
-                fish.textContent = "Guilt-Free Steakfish Filets";
-                spaghettiTitle.textContent = "Spaghetti and Moe Balls";
-                    spaghettiDesc.textContent = "Authentic Italian-style, home-style, noodles in tomato sauce with Moe's world famous mostly meat balls."
+    const mealsHeader = document.createElement("h2");
+        mealsHeader.classList = "header";
+        mealsHeader.textContent = "Main Courses";
+
+            export const hotDogDiv = document.createElement("div");
+            export const hotDogPic = document.createElement("img");
+            hotDogPic.src = hotdog
+            hotDogDiv.classList = "meals";
+                const hotDogTitle = document.createElement("h3");
+                const hotDogDesc = document.createElement("p");
+                hotDogTitle.classList = "entries";
+                hotDogDesc.classList = "desc";
+                    hotDogTitle.textContent = "Amtrak-style Hot Dog";
+                    hotDogDesc.textContent = "Moe's world famous Amtrak-style Hot Dog "
+            
+            export const deepFriedDiv = document.createElement("div");
+            export const deepFriedPic = document.createElement("img");
+            deepFriedPic.src = deepfried;
+            deepFriedDiv.classList = "meals";
+                const deepFriedTitle = document.createElement("h3");
+                const deepFriedDesc = document.createElement("p");
+                deepFriedTitle.classList = "entries";
+                deepFriedDesc.classList = "desc";
+                    deepFriedTitle.textContent = "Deep-fried home-style meals";
+                    deepFriedDesc.textContent = "Enjoy your food/drinks/objects the American way (MFF LLC is not responsible for cardiovascular infarctions, always consult your doctor before consuming)."
+
+            export const fishDiv = document.createElement("div");
+            export const fishPic = document.createElement("img");
+            fishPic.src = steakfish;
+            fishDiv.classList = "meals";
+                const fishTitle = document.createElement("h3");
+                const fishDesc = document.createElement("p");
+                fishTitle.classList = "entries";
+                fishDesc.classList = "desc";
+                    fishTitle.textContent = "Guilt-Free Steakfish Filets";
+                    fishDesc.textContent = "Packed with protein and artificial colors, this dish is so delicious, it feels like cheating on your diet! *Note: `Diet` in this context refers only to general consumption and is NOT meant to imply any nutritional value."
+
+            export const spaghettiDiv = document.createElement("div");
+            export const spaghettiPic - document.createElement("img");
+            spaghettiPic.src = spaghettiDesc;
+            spaghettiDiv.classList = "meals";
+                const spaghettiTitle = document.createElement("h3");
+                const spaghettiDesc = document.createElement("p");
+                    spaghettiTitle.classList = "entries";
+                    spaghettiDesc.classList = "desc";
+                        spaghettiTitle.textContent = "Spaghetti and Moe Balls";
+                        spaghettiDesc.textContent = "Authentic Italian-style, home-style, noodles in tomato sauce with Moe's world famous mostly meat balls.";
 
 // Drinks title, list of h3 elements for each entry, adds p descriptions.
 export const drinks = document.createElement("div");
@@ -119,18 +155,21 @@ drinks.classList = "drinks";
         drinksTitle.textContent = "Drinks";
             export const beer1 = document.createElement("h4");
             export const beer2 = document.createElement("h4");
+            export const beer3 = document.createElement("h4");
             export const wine1 = document.createElement("h4");
             export const wine2 = document.createElement("h4");
             export const cola1 = document.createElement("h4");
             export const cola2 = document.createElement("h4");
             beer1.classList = "entries";
             beer2.classList = "entries";
+            beer3.classList = "entries";
             wine1.classList = "entries";
             wine2.classList = "entries";
             cola1.classList = "entries";
             cola2.classList = "entries";
                 beer1.textContent = "Duff";
                 beer2.textContent = "Duff Lite";
+                beer3.textContent = "Düff";
                 wine1.textContent = "White Zinfandel";
                 wine2.textContent = "Red Zinfandel";
                 cola1.textContent = "Buzz Cola";
