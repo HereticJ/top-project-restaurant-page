@@ -91,18 +91,17 @@ img {
 
 .meals {
     display: grid;
-
 }
 
-.headers {
+.header {
     font-style: bold;
     text-decoration: underline;
     margin: 0;
 }
 
 div > img {
-    width: 300px;
-    height: 200px;
+    display: flex;
+    flex: 2;
 }
 
 .entries > #text {

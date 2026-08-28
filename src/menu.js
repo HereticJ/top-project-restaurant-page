@@ -1,4 +1,4 @@
-import chips from "./chips.png";
+import chips from "./chips.jpg";
 import fries from "./fries.jpg";
 import chili from "./chili.jpg";
 import pizza from "./pizza.jpg";
@@ -22,8 +22,8 @@ sides.classList = "sides";
         sidesHeader.classList = "header";
         sidesHeader.textContent = "Sides";
         
-    export const chipsDiv = document.createElement("div");
-    export const chipsPic = document.createElement("img");
+    const chipsDiv = document.createElement("div");
+    const chipsPic = document.createElement("img");
     chipsPic.src = chips;
     chipsDiv.classList = "sides";
         const chipsTitle = document.createElement("h3");
@@ -31,8 +31,8 @@ sides.classList = "sides";
         chipsDiv.classList = "sides";
         chipsDesc.classList = "desc";
         chipsTitle.classList = "entries";
-            chipsTitle.textContent = "Fiestaritos";
-            chipsDesc.textContent = "Start your fiesta right with Moe's house-made tortilla chips and your choice of salsa."
+            chipsTitle.textContent = "Fiestaritos - $8.99";
+            chipsDesc.textContent = "Start your fiesta right with Moe's house-made tortilla chips and your choice of salsa (Don't even think about asking for guac)."
                 chipsDiv.appendChild(chipsTitle);
                 chipsDiv.appendChild(chipsPic);
                 chipsDiv.appendChild(chipsDesc);
@@ -45,7 +45,7 @@ sides.classList = "sides";
         const friesDesc = document.createElement("p");
         friesTitle.classList = "entries";
         friesDesc.classList = "desc";
-            friesTitle.textContent = "Million Dollar Birthday Fries";
+            friesTitle.textContent = "Million Dollar Birthday Fries - $8.99 (a 99.9991% discount!)";
             friesDesc.textContent = "Please remember to remove the basket from Moe's head (it gets really hot)."
                 friesDiv.appendChild(friesTitle);
                 friesDiv.appendChild(friesPic);
@@ -60,7 +60,7 @@ sides.classList = "sides";
         chiliTitle.classList = "entries";
         chiliDesc.classList = "desc";
             chiliTitle.textContent = "Moe's Chicken Chili";
-            chiliDesc.textContent = "Now with less offensive language!";
+            chiliDesc.textContent = "Now with less offensive language! $8.99 per bowl";
                 chiliDiv.appendChild(chiliTitle);
                 chiliDiv.appendChild(chiliPic);
                 chiliDiv.appendChild(chiliDesc);
@@ -74,7 +74,7 @@ sides.classList = "sides";
         wingsTitle.classList = "entries";
         wingsDesc.classList = "desc";
             wingsTitle.textContent = "Ranchy Wingy Thingys";
-            wingsDesc.textContent = "Made with up to 30% genuine* buffalo meat!"
+            wingsDesc.textContent = "Made with up to 30% genuine* buffalo meat! - $11.99 for 6, $16.99 for 12"
                 wingsDiv.appendChild(wingsTitle);
                 wingsDiv.appendChild(wingsPic);
                 wingsDiv.appendChild(wingsDesc);
@@ -87,12 +87,13 @@ sides.classList = "sides";
         const pizzaDesc = document.createElement("p");
             pizzaTitle.classList = "entries";
             pizzaDesc.classList = "desc";
-                pizzaTitle.textContent = "Southwestern Pizza Fingers";
-                pizzaDesc.textContent = "Who needs triangles when you can have rectangles? *Note: actual geometry may vary."
+                pizzaTitle.textContent = "Southwestern Pizza Fingers - $9.99";
+                pizzaDesc.textContent = "Who needs triangles when you can have rectangles? *Note: geometry may vary."
                     pizzaDiv.appendChild(pizzaTitle);
                     pizzaDiv.appendChild(pizzaPic);
                     pizzaDiv.appendChild(pizzaDesc);
 
+sides.appendChild(sidesHeader);
 sides.appendChild(chipsDiv);
 sides.appendChild(friesDiv);
 sides.appendChild(chiliDiv);
@@ -102,7 +103,7 @@ sides.appendChild(pizzaDiv);
 // Meals title, list of h3 elements for each entry, adds p descriptions.
 export const meals = document.createElement("div");
 meals.classList = "meals";
-    export const mealsHeader = document.createElement("h2");
+    const mealsHeader = document.createElement("h2");
         mealsHeader.classList = "header";
         mealsHeader.textContent = "Main Courses";
 
@@ -115,7 +116,7 @@ meals.classList = "meals";
                 hotDogTitle.classList = "entries";
                 hotDogDesc.classList = "desc";
                     hotDogTitle.textContent = "Amtrak-style Hot Dog";
-                    hotDogDesc.textContent = "Moe's world famous Amtrak-style Hot Dog";
+                    hotDogDesc.textContent = "Moe's world famous Amtrak-style Hot Dog - $15.99 for two";
                         hotDogDiv.appendChild(hotDogTitle);
                         hotDogDiv.appendChild(hotDogPic);
                         hotDogDiv.appendChild(hotDogDesc);
@@ -128,7 +129,7 @@ meals.classList = "meals";
                 const deepFriedDesc = document.createElement("p");
                 deepFriedTitle.classList = "entries";
                 deepFriedDesc.classList = "desc";
-                    deepFriedTitle.textContent = "Deep-fried home-style meals";
+                    deepFriedTitle.textContent = "Deep-fried home-style meals $20.99";
                     deepFriedDesc.textContent = "Enjoy your food/drinks/objects the American way (MFF LLC is not responsible for cardiovascular infarctions, always consult your doctor before consuming)."
                         deepFriedDiv.appendChild(deepFriedTitle);
                         deepFriedDiv.appendChild(deepFriedPic);
@@ -142,7 +143,7 @@ meals.classList = "meals";
                 const fishDesc = document.createElement("p");
                 fishTitle.classList = "entries";
                 fishDesc.classList = "desc";
-                    fishTitle.textContent = "Guilt-Free Steakfish Filets";
+                    fishTitle.textContent = "Guilt-Free Steakfish Filets - $22.99";
                     fishDesc.textContent = "Packed with protein and artificial colors, this dish is so delicious, it feels like cheating on your diet! *Note: `Diet` in this context refers only to general consumption and is NOT meant to imply any nutritional value."
                         fishDiv.appendChild(fishTitle);
                         fishDiv.appendChild(fishPic);
@@ -156,11 +157,17 @@ meals.classList = "meals";
                 const spaghettiDesc = document.createElement("p");
                     spaghettiTitle.classList = "entries";
                     spaghettiDesc.classList = "desc";
-                        spaghettiTitle.textContent = "Spaghetti and Moe Balls";
+                        spaghettiTitle.textContent = "Spaghetti and Moe Balls - $18.99";
                         spaghettiDesc.textContent = "Authentic Italian-style, home-style, noodles in tomato sauce with Moe's world famous mostly meat balls.";
                             spaghettiDiv.appendChild(spaghettiTitle);
                             spaghettiDiv.appendChild(spaghettiPic);
                             spaghettiDiv.appendChild(spaghettiDesc);
+
+meals.appendChild(mealsHeader);
+meals.appendChild(hotDogDiv);
+meals.appendChild(deepFriedDiv);
+meals.appendChild(fishDiv);
+meals.appendChild(spaghettiDiv);
 
 // Drinks title, list of h3 elements for each entry, adds p descriptions.
 export const drinks = document.createElement("div");
@@ -177,8 +184,11 @@ drinks.classList = "drinks";
             const beer1Desc = document.createElement("p");
                 beer1Title.classList = "entries";
                 beer1Desc.classList = "desc";
-                    beer1Title.textContent = "Duff";
+                    beer1Title.textContent = "Duff - $6.99";
                     beer1Desc.textContent = "The one and only Duff, served ice-cold.";
+                        beer1Div.appendChild(beer1Title);
+                        beer1Div.appendChild(beer1Pic);
+                        beer1Div.appendChild(beer1Desc);
 
         export const beer2Div = document.createElement("div");
         export const beer2Pic = document.createElement("img");
@@ -188,8 +198,11 @@ drinks.classList = "drinks";
             const beer2Desc = document.createElement("p");
                 beer2Title.classList = "entries";
                 beer2Desc.classList = "desc";
-                    beer2Title.textContent = "Duff Lite";
+                    beer2Title.textContent = "Duff Lite - $6.99";
                     beer2Desc.textContent = "The one and only Duff Lite, served ice-cold.";
+                        beer2Div.appendChild(beer2Title);
+                        beer2Div.appendChild(beer2Pic);
+                        beer2Div.appendChild(beer2Desc);
 
         export const beer3Div = document.createElement("div");
         export const beer3Pic = document.createElement("img");
@@ -199,8 +212,11 @@ drinks.classList = "drinks";
             const beer3Desc = document.createElement("p");
                 beer3Title.classList = "entries";
                 beer3Desc.classList = "desc";
-                    beer3Title.textContent = "Düff";
+                    beer3Title.textContent = "Düff - $14.99";
                     beer3Desc.textContent = "The one and only Düff, served ice-cold (with less freedom).";
+                        beer3Div.appendChild(beer3Title);
+                        beer3Div.appendChild(beer3Pic);
+                        beer3Div.appendChild(beer3Desc);
 
         export const wine1Div = document.createElement("div");
         export const wine1Pic = document.createElement("img");
@@ -210,8 +226,11 @@ drinks.classList = "drinks";
             const wine1Desc = document.createElement("p");
                 wine1Title.classList = "entries";
                 wine1Desc.classList = "desc";
-                    wine1Title.textContent = "Lambuggini Wine";
+                    wine1Title.textContent = "Lambuggini Wine - $12.99";
                     wine1Desc.textContent = "The finest in Italian boxed wine served in repurposed bottles to make any occasion appear fancy.";
+                        wine1Div.appendChild(wine1Title);
+                        wine1Div.appendChild(wine1Pic);
+                        wine1Div.appendChild(wine1Desc);
 
         export const wine2Div = document.createElement("div");
         export const wine2Pic = document.createElement("img");
@@ -221,8 +240,11 @@ drinks.classList = "drinks";
             const wine2Desc = document.createElement("p");
                 wine2Title.classList = "entries";
                 wine2Desc.classList = "desc";
-                    wine2Title.textContent = "White or Red Wine";
+                    wine2Title.textContent = "White or Red Wine - $10.99";
                     wine2Desc.textContent = "That's right! Two colors to choose from.";
+                        wine2Div.appendChild(wine2Title);
+                        wine2Div.appendChild(wine2Pic);
+                        wine2Div.appendChild(wine2Desc);
             
         export const cola1Div = document.createElement("div");
         export const cola1Pic = document.createElement("img");
@@ -232,8 +254,11 @@ drinks.classList = "drinks";
             const cola1Desc = document.createElement("p");
                 cola1Title.classList = "entries";
                 cola1Desc.classList = "desc";
-                    cola1Title.textContent = "Buzz Cola";
+                    cola1Title.textContent = "Buzz Cola - $3.99";
                     cola1Desc.textContent = "Because the only thing that makes caffeine better is high-fructose corn syrup.";
+                        cola1Div.appendChild(cola1Title);
+                        cola1Div.appendChild(cola1Pic);
+                        cola1Div.appendChild(cola1Desc);
 
         export const cola2Div = document.createElement("div");
         export const cola2Pic = document.createElement("img");
@@ -243,8 +268,20 @@ drinks.classList = "drinks";
             const cola2Desc = document.createElement("p");
                 cola2Title.classList = "entries";
                 cola2Desc.classList = "desc";
-                    cola2Title.textContent = "Diet Buzz";
+                    cola2Title.textContent = "Diet Buzz - $3.99";
                     cola2Desc.textContent = "...unless you're not interested in sugar. Then caffeine goes great with free refills. *Note: refills are NOT free.";
+                        cola2Div.appendChild(cola2Title);
+                        cola2Div.appendChild(cola2Pic);
+                        cola2Div.appendChild(cola2Desc);
+
+drinks.appendChild(drinksHeader);
+drinks.appendChild(beer1Div);
+drinks.appendChild(beer2Div);
+drinks.appendChild(beer3Div);
+drinks.appendChild(wine1Div);
+drinks.appendChild(wine2Div);
+drinks.appendChild(cola1Div);
+drinks.appendChild(cola2Div);
 
 // Desserts title, list of h3 elements for each entry, adds p descriptions.
 export const desserts = document.createElement("div#desserts");

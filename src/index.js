@@ -1,7 +1,7 @@
 import "./styles.css";
 import { headline, desc, content, image } from "./homepage.js";
-import { sides, meals, drinks } 
-     from "./menu.js";
+import { sides, meals, drinks } from "./menu.js";
+import { about } from "./about.js";
 
 // Initializes tab buttons.
 const homeBtn = document.querySelector("#home");
@@ -36,14 +36,19 @@ menuBtn.addEventListener("click", menuPage);
 aboutBtn.addEventListener("click", aboutPage);
     function aboutPage() {
         removeTab();
+        aboutContents();
     };
 
 // Fills menu tab with menu content.
 function menuContents() {
     // Appends sides to DOM.
-    content.appendChild(meals)
     content.appendChild(sides);
+    content.appendChild(meals)
     content.appendChild(drinks);
+};
+
+function aboutContents() {
+    content.appendChild(about);
 };
 
 console.log("Is this working yet?");
