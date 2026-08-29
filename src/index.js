@@ -1,6 +1,6 @@
 import "./styles.css";
 import { headline, desc, content, image } from "./homepage.js";
-import { sides, meals, drinks } from "./menu.js";
+import { sides, meals, drinks, desserts } from "./menu.js";
 import { about } from "./about.js";
 
 // Initializes tab buttons.
@@ -45,6 +45,7 @@ function menuContents() {
     content.appendChild(sides);
     content.appendChild(meals)
     content.appendChild(drinks);
+    content.appendChild(desserts);
 };
 
 function aboutContents() {

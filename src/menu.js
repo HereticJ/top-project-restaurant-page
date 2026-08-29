@@ -14,6 +14,8 @@ import wine1 from "./wine1.jpg";
 import wine2 from "./wine2.jpg";
 import cola1 from "./cola1.jpg";
 import cola2 from "./cola2.jpg";
+import donut from "./donut.jpg";
+import sundae from "./sundae.jpg";
 
 // Sides title, list of h3 elements for each entry, adds p descriptions.
 export const sides = document.createElement("div");
@@ -37,8 +39,8 @@ sides.classList = "sides";
                 chipsDiv.appendChild(chipsPic);
                 chipsDiv.appendChild(chipsDesc);
         
-    export const friesDiv = document.createElement("div");
-    export const friesPic = document.createElement("img");
+    const friesDiv = document.createElement("div");
+    const friesPic = document.createElement("img");
     friesPic.src = fries;
     friesDiv.classList = "sides";
         const friesTitle = document.createElement("h3");
@@ -51,8 +53,8 @@ sides.classList = "sides";
                 friesDiv.appendChild(friesPic);
                 friesDiv.appendChild(friesDesc);        
                 
-    export const chiliDiv = document.createElement("div");
-    export const chiliPic = document.createElement("img");
+    const chiliDiv = document.createElement("div");
+    const chiliPic = document.createElement("img");
     chiliPic.src = chili;
     chiliDiv.classList = "sides";
         const chiliTitle = document.createElement("h3");
@@ -65,8 +67,8 @@ sides.classList = "sides";
                 chiliDiv.appendChild(chiliPic);
                 chiliDiv.appendChild(chiliDesc);
     
-    export const wingsDiv = document.createElement("div");
-    export const wingsPic = document.createElement("img");
+    const wingsDiv = document.createElement("div");
+    const wingsPic = document.createElement("img");
     wingsPic.src = wings;
     wingsDiv.classList = "sides";
         const wingsTitle = document.createElement("h3");
@@ -79,8 +81,8 @@ sides.classList = "sides";
                 wingsDiv.appendChild(wingsPic);
                 wingsDiv.appendChild(wingsDesc);
                             
-    export const pizzaDiv = document.createElement("div");
-    export const pizzaPic = document.createElement("img");
+    const pizzaDiv = document.createElement("div");
+    const pizzaPic = document.createElement("img");
     pizzaPic.src = pizza;
     pizzaDiv.classList = "sides";
         const pizzaTitle = document.createElement("h3");
@@ -107,8 +109,8 @@ meals.classList = "meals";
         mealsHeader.classList = "header";
         mealsHeader.textContent = "Main Courses";
 
-            export const hotDogDiv = document.createElement("div");
-            export const hotDogPic = document.createElement("img");
+            const hotDogDiv = document.createElement("div");
+            const hotDogPic = document.createElement("img");
             hotDogPic.src = hotdog
             hotDogDiv.classList = "meals";
                 const hotDogTitle = document.createElement("h3");
@@ -121,8 +123,8 @@ meals.classList = "meals";
                         hotDogDiv.appendChild(hotDogPic);
                         hotDogDiv.appendChild(hotDogDesc);
             
-            export const deepFriedDiv = document.createElement("div");
-            export const deepFriedPic = document.createElement("img");
+            const deepFriedDiv = document.createElement("div");
+            const deepFriedPic = document.createElement("img");
             deepFriedPic.src = deepfried;
             deepFriedDiv.classList = "meals";
                 const deepFriedTitle = document.createElement("h3");
@@ -135,8 +137,8 @@ meals.classList = "meals";
                         deepFriedDiv.appendChild(deepFriedPic);
                         deepFriedDiv.appendChild(deepFriedDesc);
 
-            export const fishDiv = document.createElement("div");
-            export const fishPic = document.createElement("img");
+            const fishDiv = document.createElement("div");
+            const fishPic = document.createElement("img");
             fishPic.src = steakfish;
             fishDiv.classList = "meals";
                 const fishTitle = document.createElement("h3");
@@ -149,8 +151,8 @@ meals.classList = "meals";
                         fishDiv.appendChild(fishPic);
                         fishDiv.appendChild(fishDesc);
 
-            export const spaghettiDiv = document.createElement("div");
-            export const spaghettiPic = document.createElement("img");
+            const spaghettiDiv = document.createElement("div");
+            const spaghettiPic = document.createElement("img");
             spaghettiPic.src = spaghetti;
             spaghettiDiv.classList = "meals";
                 const spaghettiTitle = document.createElement("h3");
@@ -176,8 +178,8 @@ drinks.classList = "drinks";
     drinksHeader.classList = "header";
     drinksHeader.textContent = "Drinks";
 
-        export const beer1Div = document.createElement("div");
-        export const beer1Pic = document.createElement("img");
+        const beer1Div = document.createElement("div");
+        const beer1Pic = document.createElement("img");
         beer1Pic.src = duff;        
         beer1Div.classList = "drinks";
             const beer1Title = document.createElement("h4");
@@ -190,8 +192,8 @@ drinks.classList = "drinks";
                         beer1Div.appendChild(beer1Pic);
                         beer1Div.appendChild(beer1Desc);
 
-        export const beer2Div = document.createElement("div");
-        export const beer2Pic = document.createElement("img");
+        const beer2Div = document.createElement("div");
+        const beer2Pic = document.createElement("img");
         beer2Pic.src = dufflite;
         beer2Div.classList = "drinks";
             const beer2Title = document.createElement("h4");
@@ -204,8 +206,8 @@ drinks.classList = "drinks";
                         beer2Div.appendChild(beer2Pic);
                         beer2Div.appendChild(beer2Desc);
 
-        export const beer3Div = document.createElement("div");
-        export const beer3Pic = document.createElement("img");
+        const beer3Div = document.createElement("div");
+        const beer3Pic = document.createElement("img");
         beer3Pic.src = dufffancy;
         beer3Div.classList = "drinks";
             const beer3Title = document.createElement("h4");
@@ -218,8 +220,8 @@ drinks.classList = "drinks";
                         beer3Div.appendChild(beer3Pic);
                         beer3Div.appendChild(beer3Desc);
 
-        export const wine1Div = document.createElement("div");
-        export const wine1Pic = document.createElement("img");
+        const wine1Div = document.createElement("div");
+        const wine1Pic = document.createElement("img");
         wine1Pic.src = wine1  
         wine1Div.classList = "drinks";
             const wine1Title = document.createElement("h4");
@@ -227,13 +229,13 @@ drinks.classList = "drinks";
                 wine1Title.classList = "entries";
                 wine1Desc.classList = "desc";
                     wine1Title.textContent = "Lambuggini Wine - $12.99";
-                    wine1Desc.textContent = "The finest in Italian boxed wine served in repurposed bottles to make any occasion appear fancy.";
+                    wine1Desc.textContent = `The finest in Italian boxed wine served in repurposed bottles to make any occasion appear fancy. (Including a generous "tip," wait staff may update your receipt with a higher price tag!*`;
                         wine1Div.appendChild(wine1Title);
                         wine1Div.appendChild(wine1Pic);
                         wine1Div.appendChild(wine1Desc);
 
-        export const wine2Div = document.createElement("div");
-        export const wine2Pic = document.createElement("img");
+        const wine2Div = document.createElement("div");
+        const wine2Pic = document.createElement("img");
         wine2Pic.src = wine2
         wine2Div.classList = "drinks";
             const wine2Title = document.createElement("h4");
@@ -246,8 +248,8 @@ drinks.classList = "drinks";
                         wine2Div.appendChild(wine2Pic);
                         wine2Div.appendChild(wine2Desc);
             
-        export const cola1Div = document.createElement("div");
-        export const cola1Pic = document.createElement("img");
+        const cola1Div = document.createElement("div");
+        const cola1Pic = document.createElement("img");
         cola1Pic.src = cola1       
         cola1Div.classList = "drinks";
             const cola1Title = document.createElement("h4");
@@ -260,8 +262,8 @@ drinks.classList = "drinks";
                         cola1Div.appendChild(cola1Pic);
                         cola1Div.appendChild(cola1Desc);
 
-        export const cola2Div = document.createElement("div");
-        export const cola2Pic = document.createElement("img");
+        const cola2Div = document.createElement("div");
+        const cola2Pic = document.createElement("img");
         cola2Pic.src = cola2;      
         cola2Div.classList = "drinks";
             const cola2Title = document.createElement("h4");
@@ -285,12 +287,48 @@ drinks.appendChild(cola2Div);
 
 // Desserts title, list of h3 elements for each entry, adds p descriptions.
 export const desserts = document.createElement("div#desserts");
-    export const dessertsHeader = document.createElement("h3");
-    dessertsHeader.classList = "titles";
+desserts.classList = "desserts";
+        const dessertsHeader = document.createElement("h3");
+        dessertsHeader.classList = "header";
         dessertsHeader.textContent = "Desserts";
-            export const donuts = document.createElement("h4");
-            donuts.classList = "entries";
 
+            const donutDiv = document.createElement("div");
+            const donutPic = document.createElement("img");
+                donutPic.src = donut;
+                donutDiv.classList = "desserts";
+                    const donutTitle = document.createElement("h4");
+                    const donutDesc = document.createElement("p");
+                        donutTitle.classList = "entries";
+                        donutDesc.classList = "desc";
+                            donutTitle.textContent = "Moe's Perfect Donut - $5.99 each";
+                            donutDesc.textContent = "The Cadillac of donuts. Practically glows. Note: Ingredients may come damned.";
+                                donutDiv.appendChild(donutTitle);
+                                donutDiv.appendChild(donutPic);
+                                donutDiv.appendChild(donutDesc);
+            
+            const sundaeDiv = document.createElement("div");
+            const sundaePic = document.createElement("img");
+                sundaePic.src = sundae;
+                sundaeDiv.classList = "desserts";
+                    const sundaeTitle = document.createElement("h4");
+                    const sundaeDesc = document.createElement("p");
+                        sundaeTitle.classList = "entries";
+                        sundaeDesc.classList = "desc";
+                            sundaeTitle.textContent = "Moe's Sunday Sundae - $13.99"
+                            sundaeDesc.textContent = "A BOATload of ice cream, fudge, and whipped cream. Fruit available on request (depending on seasonal availability, add $10.00). Don't let the name fool you, available all week."
+                                sundaeDiv.appendChild(sundaeTitle);
+                                sundaeDiv.appendChild(sundaePic);
+                                sundaeDiv.appendChild(sundaeDesc);
+
+desserts.appendChild(dessertsHeader);
+desserts.appendChild(donutDiv);
+desserts.appendChild(sundaeDiv);
+                
+
+const wineDisclaimer = document.createElement("p");
+wineDisclaimer.classList = "wd";
+wineDisclaimer.textContent = "*This is a joke, legally speaking. &#128521"
+desserts.appendChild(wineDisclaimer);
 
 
 
