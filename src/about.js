@@ -1,10 +1,13 @@
+// Creates primary page div and imports pics.
 export const about = document.createElement("div");
 import phone from "./phone.jpg";
 import email from "./email.jpg";
 
+// About page headline.
 const aboutPage = document.createElement("h2");
 aboutPage.textContent = "Contact Us";
 
+// About page phone contact contents.
 const phoneNumber = document.createElement("h4");
 const phoneDisclaimer1 = document.createElement("p");
 const phoneDisclaimer2 = document.createElement("p");
@@ -15,6 +18,7 @@ phoneDisclaimer2.textContent = "*Any threats and/or opinions issued by the resta
 const phonePic = document.createElement("img");
 phonePic.src = phone;
 
+// About page email contact contents.
 const emailTitle = document.createElement("h4");
 const emailDisclaimer = document.createElement("p");
 emailDisclaimer.classList = "ed";
@@ -23,6 +27,7 @@ emailDisclaimer.textContent = "*Please allow 12-15 business days for replies. Re
 const emailPic = document.createElement("img");
 emailPic.src = email;
 
+// Appends contents in proper order.
 about.appendChild(aboutPage);
 about.appendChild(phoneNumber);
 about.appendChild(phonePic);

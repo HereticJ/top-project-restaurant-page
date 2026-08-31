@@ -1,3 +1,4 @@
+// Imports modules.
 import "./styles.css";
 import { headline, desc, content, image } from "./homepage.js";
 import { sides, meals, drinks, desserts } from "./menu.js";
@@ -48,8 +49,10 @@ function menuContents() {
     content.appendChild(desserts);
 };
 
+// Fills about tab with content.
 function aboutContents() {
     content.appendChild(about);
 };
 
+// Leftover from beginning of project.
 console.log("Is this working yet?");

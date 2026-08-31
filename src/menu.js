@@ -1,3 +1,4 @@
+// Massive list of pictures imported of totally copyrighted content.
 import chips from "./chips.jpg";
 import fries from "./fries.jpg";
 import chili from "./chili.jpg";
@@ -95,6 +96,7 @@ sides.classList = "sides";
                     pizzaDiv.appendChild(pizzaPic);
                     pizzaDiv.appendChild(pizzaDesc);
 
+// Appends side content in order.
 sides.appendChild(sidesHeader);
 sides.appendChild(chipsDiv);
 sides.appendChild(friesDiv);
@@ -164,7 +166,7 @@ meals.classList = "meals";
                             spaghettiDiv.appendChild(spaghettiTitle);
                             spaghettiDiv.appendChild(spaghettiPic);
                             spaghettiDiv.appendChild(spaghettiDesc);
-
+// Appends meals content in order.
 meals.appendChild(mealsHeader);
 meals.appendChild(hotDogDiv);
 meals.appendChild(deepFriedDiv);
@@ -276,6 +278,7 @@ drinks.classList = "drinks";
                         cola2Div.appendChild(cola2Pic);
                         cola2Div.appendChild(cola2Desc);
 
+// Appends drinks content in order.
 drinks.appendChild(drinksHeader);
 drinks.appendChild(beer1Div);
 drinks.appendChild(beer2Div);
@@ -320,11 +323,12 @@ desserts.classList = "desserts";
                                 sundaeDiv.appendChild(sundaePic);
                                 sundaeDiv.appendChild(sundaeDesc);
 
+// Appends desserts content in order.
 desserts.appendChild(dessertsHeader);
 desserts.appendChild(donutDiv);
 desserts.appendChild(sundaeDiv);
                 
-
+// Special fine print for fun.
 const wineDisclaimer = document.createElement("p");
 wineDisclaimer.classList = "wd";
 wineDisclaimer.textContent = "*This is a joke, legally speaking. &#128521"

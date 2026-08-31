@@ -1,3 +1,4 @@
+// Exports homepage contents and pic.
 export const headline = document.createElement("h1");
 export const desc = document.createElement("p");
 export const content = document.querySelector("#content");
